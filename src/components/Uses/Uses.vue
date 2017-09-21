@@ -1,5 +1,7 @@
 <template>
-  <div></div>
+  <div>
+    日用外出组件
+  </div>
 </template>
 
 <script>

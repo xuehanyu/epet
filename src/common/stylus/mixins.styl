@@ -1,20 +1,5 @@
 bg-img($url)
-  background-image url('./img/'+$url+'@2x.png')
-  @media (min-device-pixel-ratio:3),(-webkit-min-device-pixel-ratio:3)
-    background-image url('./img/'+$url+'@3x.png')
-
-bg-star($url)
-  background-image url('../star/'+$url+'@2x.png')
-  @media (min-device-pixel-ratio:3),(-webkit-min-device-pixel-ratio:3)
-    background-image url('../star/'+$url+'@3x.png')
-border-1px($color)
-  position: relative;
-  border:none;
-  &:after
-    content: '';
-    position: absolute;
-    bottom: 0;
-    background:$color ;
-    width: 100%;
-    height: 1px;
-    transform: scaleY(0.5);
+  display block
+  height 30px
+  background url('./img_head/head_icon'+$url +'.png') 50% 0 no-repeat
+  background-size auto 100%

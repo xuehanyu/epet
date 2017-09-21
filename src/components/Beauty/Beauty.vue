@@ -1,5 +1,7 @@
 <template>
-  <div></div>
+  <div>
+    美容香波组件
+  </div>
 </template>
 
 <script>

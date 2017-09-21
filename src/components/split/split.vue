@@ -1,5 +1,7 @@
 <template>
-  <div></div>
+  <div class="line">
+    <div class="page-line"></div>
+  </div>
 </template>
 
 <script>
@@ -12,5 +14,9 @@
 </script>
 
 <style lang="stylus" rel="stylesheet/stylus">
-
+  .line
+    width 100%
+    .page-line
+      background: #f3f4f5;
+      height: 10px;
 </style>

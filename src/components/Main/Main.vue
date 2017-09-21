@@ -1,5 +1,7 @@
 <template>
-  <div></div>
+  <div>
+    主粮组件
+  </div>
 </template>
 
 <script>

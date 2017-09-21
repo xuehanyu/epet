@@ -50,35 +50,33 @@
 </script>
 
 <style lang="stylus" rel="stylesheet/stylus">
+  @import "../../common/stylus/mixins.styl"
   .container
     width 100%
     height 100%
-    .download
+    .overflow
       width 100%
       height 55px
-      z-index 9
-      .overflow
-        position relative
+      .closebtn
+        display inline-block
+        width 19px
+        height 22px
+        position absolute
+        top 14px
+        left 7px
+        & > img
+          width 100%
+      .appdowimg
         width 100%
         height 100%
-        .closebtn
-          display inline-block
-          width 19px
-          height 22px
-          position absolute
-          top 14px
-          left 7px
-          & > img
-            width 100%
-        .appdowimg
+        & > a >img
           width 100%
-          height 100%
-          & > a >img
-            width 100%
-            vertical-align middle
+          vertical-align middle
     .hideHeader
+      display none
       width 100%
       .head_top
+        display flex
         width 100%
         height 50px
         line-height 50px
@@ -87,7 +85,6 @@
         position relative
         .go-back
           display block
-          float left
           background-image url("./img_head/personal-bico1.png")
           background-repeat no-repeat
           background-size 9px 17px
@@ -98,7 +95,6 @@
         .head_top_title
           width 90%
           display block
-          float left
           overflow hidden
           white-space nowrap
           text-overflow ellipsis
@@ -108,7 +104,6 @@
           font-family '微软雅黑'
         .pull_right
           display block
-          float left
           width 20px
           height 20px
           margin-top 14px
@@ -130,10 +125,38 @@
           float left
           text-align center
           width 25%
-          .icon1
-            display block
-            background-image url("./img_head/head_icon1.png")
-            background-repeat no-repeat
-            background-size auto 100%
+          color #333
+          & > .icon1
+            bg-img(1)
+          & >.icon2
+            bg-img(2)
+          & >.icon4
+            bg-img(4)
+            & >em
+              display: inline-block
+              height: 22px
+              width: 22px
+              color: #fff
+              text-align center
+              line-height: 18px
+              font-size: 12px
+              background: red
+              border-radius: 1em
+              border: #fff solid 2px
+              position: relative
+              top: -.5em
+              left: 1em
+              font-style normal
+          & >.icon5
+            bg-img(5)
+          & > p
+            color #666
+            font-size 14px
+            text-align center
+            line-height 22px
+
+
+
+
 
 </style>

@@ -1,5 +1,7 @@
 <template>
-  <div></div>
+  <div>
+    零食玩具组件
+  </div>
 </template>
 
 <script>

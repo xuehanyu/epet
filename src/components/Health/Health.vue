@@ -1,5 +1,7 @@
 <template>
-  <div></div>
+  <div>
+    医疗保健组件
+  </div>
 </template>
 
 <script>
