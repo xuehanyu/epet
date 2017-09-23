@@ -1,5 +1,5 @@
 <template>
-  <div>
+  <div class="main">
     主粮组件
   </div>
 </template>
@@ -14,5 +14,7 @@
 </script>
 
 <style lang="stylus" rel="stylesheet/stylus">
-
+  .main
+    position absolute
+    top 142px
 </style>

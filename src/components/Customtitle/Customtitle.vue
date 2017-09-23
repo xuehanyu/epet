@@ -26,12 +26,12 @@
   .custom_title
     width 100%
     padding-top 10px
-    height 62px
     position relative
     .hot_video
       width 100%
       text-align center
       img
+        display block
         max-width: 50%;
         max-height: 73px;
         margin: 0 auto;
@@ -43,6 +43,4 @@
       right 0
       img
         width 50%
-
-
 </style>

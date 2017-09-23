@@ -1,5 +1,5 @@
 <template>
-  <div>
+  <div class="beauty">
     美容香波组件
   </div>
 </template>
@@ -14,5 +14,7 @@
 </script>
 
 <style lang="stylus" rel="stylesheet/stylus">
-
+  .beauty
+    position absolute
+    top 142px
 </style>

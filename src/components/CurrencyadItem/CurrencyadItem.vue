@@ -49,12 +49,11 @@
       display flex
       width 100%
       .hot_new_col1
-        width 42%
         img
           width 100%
           vertical-align middle
+          border-right: 1px solid #e7e7e7;
       .hot_new_col2
-        width 68%
         .hot_new_col21
           width 100%
           height 50%

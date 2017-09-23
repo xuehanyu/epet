@@ -1,5 +1,5 @@
 <template>
-  <div>
+  <div class="uses">
     日用外出组件
   </div>
 </template>
@@ -14,5 +14,7 @@
 </script>
 
 <style lang="stylus" rel="stylesheet/stylus">
-
+  .uses
+    position absolute
+    top 142px
 </style>

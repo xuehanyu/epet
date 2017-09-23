@@ -1,5 +1,5 @@
 <template>
-  <div>
+  <div class="health">
     医疗保健组件
   </div>
 </template>
@@ -14,5 +14,7 @@
 </script>
 
 <style lang="stylus" rel="stylesheet/stylus">
-
+  .health
+    position absolute
+    top 142px
 </style>

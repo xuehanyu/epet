@@ -1,6 +1,6 @@
 import Vue from 'vue'
 import Router from 'vue-router'
-import home from '../components/home_page/home_page.vue'
+import home from '../components/Home/Home.vue'
 import main from '../components/Main/Main.vue'
 import health from '../components/Health/Health.vue'
 import food from '../components/Food/Food.vue'

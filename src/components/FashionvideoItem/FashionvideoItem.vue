@@ -39,7 +39,7 @@
       img
         width 100%
       .playIcon
-        background: url('./play.png') 0 0 no-repeat;
+        background: url('play.png') 0 0 no-repeat;
         background-size: contain;
         width: 20px;
         height: 20px;
@@ -50,18 +50,19 @@
         margin-top: -10px;
     .videoDescription
       padding 10px
-      font-size 12px
       color #999
       text-align center
       .textover
         color #333
+        font-size 12px
     .videoCount
       width 100%
+      font-size 12px
       .ViewIco
         display: inline-block;
         width: 10px;
         height: 9px;
-        background: url('./view-black.png') 0 0 no-repeat;
+        background: url('view-black.png') 0 0 no-repeat;
         background-size: contain;
       .split
         margin-right 10px

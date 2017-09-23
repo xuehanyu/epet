@@ -2,22 +2,22 @@
   <div class="swipe_wrape">
     <mt-swipe :auto="2000">
       <mt-swipe-item>
-        <a href=""><img src="./img/1.jpg"></a>
+        <a href=""><img src="./img/1.jpg" alt=""></a>
       </mt-swipe-item>
       <mt-swipe-item>
-        <a href=""><img src="./img/2.jpg"></a>
+        <a href=""><img src="./img/2.jpg" alt=""></a>
       </mt-swipe-item>
       <mt-swipe-item>
-        <a href=""><img src="./img/3.jpg"></a>
+        <a href=""><img src="./img/3.jpg" alt=""></a>
       </mt-swipe-item>
       <mt-swipe-item>
-        <a href=""><img src="./img/4.jpg"></a>
+        <a href=""><img src="./img/4.jpg" alt=""></a>
       </mt-swipe-item>
       <mt-swipe-item >
-        <a href=""><img src="./img/5.jpg"></a>
+        <a href=""><img src="./img/5.jpg" alt=""></a>
       </mt-swipe-item>
       <mt-swipe-item>
-        <a href=""><img src="./img/6.jpg"></a>
+        <a href=""><img src="./img/6.jpg" alt=""></a>
       </mt-swipe-item>
     </mt-swipe>
   </div>
@@ -35,7 +35,6 @@
     methods: {}
   }
 </script>
-
 <style lang="stylus" rel="stylesheet/stylus">
   .swipe_wrape
     width 100%
