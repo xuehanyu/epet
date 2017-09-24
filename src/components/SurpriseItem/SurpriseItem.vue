@@ -118,9 +118,10 @@
     mounted (){
       const ul=this.$refs.surpriseList.children[0]
       const li=99;
+      const marginCont=23
       const liSize=ul.children.length
       console.log(liSize)
-      ul.style.width=li*liSize+'px'
+      ul.style.width=(li+marginCont)*liSize -marginCont +'px'
 
       this.$nextTick(()=>{
 
@@ -166,8 +167,6 @@
           font-weight 700
           font-size 12px
           vertical-align baseline
-
-
       .more
         position: absolute;
         top: 2px;

@@ -1,62 +1,64 @@
 <template>
-  <div ref="homePage" class="homeContainer">
-    <div class="homePage" >
-      <epet_header  class="epet_header"></epet_header>
-      <div class="tab_container" ref="tabs">
-        <ul class="tab" id="tab">
-          <li class="tab-item">
-            <router-link to='/home'>首页</router-link>
-          </li>
-          <li class="tab-item">
-            <router-link to='/main'>主粮</router-link>
-          </li>
-          <li class="tab-item">
-            <router-link to="/health">医疗保健</router-link>
-          </li>
-          <li class="tab-item">
-            <router-link to="/food">零食玩具</router-link>
-          </li>
-          <li class="tab-item">
-            <router-link to="/uses">日用外出</router-link>
-          </li>
-          <li class="tab-item">
-            <router-link to="/beauty">美容香波</router-link>
-          </li>
-        </ul>
-      </div>
-      <BannerItem></BannerItem>
-      <div class="gif">
-        <a href="javascript:;">
-          <img src="./go.gif">
-        </a>
-      </div>
-      <ColumnavItem></ColumnavItem>
-      <split></split>
-      <SurpriseItem></SurpriseItem>
-      <split></split>
-      <CurrencyadItem></CurrencyadItem>
-      <split></split>
-      <Customtitle></Customtitle>
-      <FashionvideoItem></FashionvideoItem>
-      <split></split>
-      <Customtitle></Customtitle>
-      <div class="tiyan">
-        <a href="javascript:;">
-          <img src="./tiyan.jpg">
-        </a>
-      </div>
-      <div class="special">
-        <img src="./sepcial.png">
-      </div>
-      <SingleadItem></SingleadItem>
-      <SingleadItem></SingleadItem>
-      <SingleadItem></SingleadItem>
-      <split></split>
-      <CharityItem></CharityItem>
-      <split></split>
-      <JudgeItem></JudgeItem>
-      <epet_footer></epet_footer>
+  <div class="homeContainer">
+    <epet_header  class="epet_header"></epet_header>
+    <div class="tab_container" ref="tabs">
+      <ul class="tab" id="tab">
+        <li class="tab-item">
+          <router-link to='/home'>首页</router-link>
+        </li>
+        <li class="tab-item">
+          <router-link to='/main'>主粮</router-link>
+        </li>
+        <li class="tab-item">
+          <router-link to="/health">医疗保健</router-link>
+        </li>
+        <li class="tab-item">
+          <router-link to="/food">零食玩具</router-link>
+        </li>
+        <li class="tab-item">
+          <router-link to="/uses">日用外出</router-link>
+        </li>
+        <li class="tab-item">
+          <router-link to="/beauty">美容香波</router-link>
+        </li>
+      </ul>
     </div>
+    <div ref="homePage" class="homePage">
+      <div class="other_container">
+        <BannerItem></BannerItem>
+        <div class="gif">
+          <a href="javascript:;">
+            <img src="./go.gif">
+          </a>
+        </div>
+        <ColumnavItem></ColumnavItem>
+        <split></split>
+        <SurpriseItem></SurpriseItem>
+        <split></split>
+        <CurrencyadItem></CurrencyadItem>
+        <split></split>
+        <Customtitle></Customtitle>
+        <FashionvideoItem></FashionvideoItem>
+        <split></split>
+        <Customtitle></Customtitle>
+        <div class="tiyan">
+          <a href="javascript:;">
+            <img src="./tiyan.jpg">
+          </a>
+        </div>
+        <div class="special">
+          <img src="./sepcial.png">
+        </div>
+        <SingleadItem></SingleadItem>
+        <SingleadItem></SingleadItem>
+        <SingleadItem></SingleadItem>
+        <split></split>
+        <CharityItem></CharityItem>
+        <split></split>
+        <JudgeItem></JudgeItem>
+        <epet_footer></epet_footer>
+      </div>
+  </div>
     <godog></godog>
   </div>
 </template>
@@ -121,15 +123,17 @@
   .homeContainer
     height 100%
     width 100%
-    bottom 56px
-  .homePage
+    padding-bottom 55px
     .epet_header
-      /*position fixed
-      z-index 10*/
+      position fixed
+      top 0
+      left 0
+      z-index 10
+      width 100%
       background-color white
     .tab_container
-      /*position fixed
-      z-index 10*/
+      position fixed
+      z-index 10
       background-color white
       top 108px
       width 100%
@@ -144,27 +148,32 @@
           text-align center
           a
             display block
-    .gif
+    .homePage
+      height 667px
       width 100%
-      height 120px
-      & > a > img
+    .other_container
+      padding-top 144px
+      .gif
         width 100%
-    .tiyan
-      width 100%
-      height 100%
-      & > a > img
+        height 120px
+        & > a > img
+          width 100%
+      .tiyan
         width 100%
-    .special
-      width 100%
-      position relative
-      padding-top 10px
-      text-align center
-      border-bottom 1px solid #f3f4f5
-      & > img
-        width 50%
-        display block
-        max-width: 50%;
-        max-height: 73px;
-        margin: 0 auto;
-        vertical-align middle
+        height 100%
+        & > a > img
+          width 100%
+      .special
+        width 100%
+        position relative
+        padding-top 10px
+        text-align center
+        border-bottom 1px solid #f3f4f5
+        & > img
+          width 50%
+          display block
+          max-width: 50%;
+          max-height: 73px;
+          margin: 0 auto;
+          vertical-align middle
 </style>

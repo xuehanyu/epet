@@ -1,395 +1,410 @@
 <template>
-  <div class="brand_list">
-    <div class="wrapper">
-      <div class="title">
-        <span class="recommend">—— 推荐品牌 ——</span>
+  <div class="brandContainer" id="brandContainer" ref="brandContainer">
+    <div class="brand_list">
+      <div class="wrapper">
+        <div class="title">
+          <span class="recommend">—— 推荐品牌 ——</span>
+        </div>
+        <div class="list">
+          <ul class="clearfix">
+            <li class="fl rela">
+              <a href="https://wap.epet.com/brand/bd725.html?fw=0" class="block">
+                <div class="img">
+                  <img class="image"
+                       src="https://img2.epetbar.com/nowater/brand_logo/2017-08/09/20/64ac5fd97740cb0fab0cfe3eac1d27f7.jpg">
+                </div>
+                <div class="img2">
+                  <img src="//static.epetbar.com/static_web/wap/src/images/background/jian.png" class="jian">
+                </div>
+                <p class="name">ZIWI Peak</p>
+                <p class="address ftc c999 ft12">新西兰</p>
+              </a>
+            </li>
+            <li class="fl rela">
+              <a href="https://wap.epet.com/brand/bd142.html?fw=0" class="block">
+                <div class="img loadimg-nofixed rela">
+                  <img class="db image"
+                       src="https://img2.epetbar.com/nowater/brand_logo/2013-01/28/87feaa80f9fbed84c37a7b07da6324a1.jpg"
+                       lazy="loaded">
+                </div> <!----> <!---->
+                <p class="name ftc ft13 mt5">渴望</p>
+                <p class="address ftc c999 ft12">加拿大</p>
+              </a>
+            </li>
+            <li class="fl rela">
+              <a href="https://wap.epet.com/brand/bd19.html?fw=0" class="block">
+                <div class="img loadimg-nofixed rela">
+                  <img class="db image"
+                       src="https://img2.epetbar.com/nowater/brand_logo/2016-08/12/14/f439e0dc22df3f6c5bc8919b8d9e5c82.jpg"
+                       lazy="loaded">
+                </div> <!----> <!---->
+                <p class="name ftc ft13 mt5">卡比CANIDAE</p>
+                <p class="address ftc c999 ft12">美国</p>
+              </a>
+            </li>
+            <li class="fl rela">
+              <a href="https://wap.epet.com/brand/bd413.html?fw=0" class="block">
+                <div class="img loadimg-nofixed rela">
+                  <img class="db image"
+                       src="https://img2.epetbar.com/nowater/brand_logo/2016-08/12/14/370a7f6ed7d607b8542aa9e37d202ac5.jpg"
+                       lazy="loaded">
+                </div> <!----> <!---->
+                <p class="name ftc ft13 mt5">爱肯拿Acana</p>
+                <p class="address ftc c999 ft12">加拿大</p>
+              </a>
+            </li>
+          </ul>
+        </div>
       </div>
-      <div class="list">
-        <ul class="clearfix">
-          <li class="fl rela">
-            <a href="https://wap.epet.com/brand/bd725.html?fw=0" class="block">
-              <div class="img">
-                <img class="image"
-                     src="https://img2.epetbar.com/nowater/brand_logo/2017-08/09/20/64ac5fd97740cb0fab0cfe3eac1d27f7.jpg">
-              </div>
-              <div class="img2">
-                <img src="//static.epetbar.com/static_web/wap/src/images/background/jian.png" class="jian">
-              </div>
-              <p class="name">ZIWI Peak</p>
-              <p class="address ftc c999 ft12">新西兰</p>
-            </a>
-          </li>
-          <li class="fl rela">
-            <a href="https://wap.epet.com/brand/bd142.html?fw=0" class="block">
-              <div class="img loadimg-nofixed rela">
-                <img class="db image"
-                     src="https://img2.epetbar.com/nowater/brand_logo/2013-01/28/87feaa80f9fbed84c37a7b07da6324a1.jpg"
-                     lazy="loaded">
-              </div> <!----> <!---->
-              <p class="name ftc ft13 mt5">渴望</p>
-              <p class="address ftc c999 ft12">加拿大</p>
-            </a>
-          </li>
-          <li class="fl rela">
-            <a href="https://wap.epet.com/brand/bd19.html?fw=0" class="block">
-              <div class="img loadimg-nofixed rela">
-                <img class="db image"
-                     src="https://img2.epetbar.com/nowater/brand_logo/2016-08/12/14/f439e0dc22df3f6c5bc8919b8d9e5c82.jpg"
-                     lazy="loaded">
-              </div> <!----> <!---->
-              <p class="name ftc ft13 mt5">卡比CANIDAE</p>
-              <p class="address ftc c999 ft12">美国</p>
-            </a>
-          </li>
-          <li class="fl rela">
-            <a href="https://wap.epet.com/brand/bd413.html?fw=0" class="block">
-              <div class="img loadimg-nofixed rela">
-                <img class="db image"
-                     src="https://img2.epetbar.com/nowater/brand_logo/2016-08/12/14/370a7f6ed7d607b8542aa9e37d202ac5.jpg"
-                     lazy="loaded">
-              </div> <!----> <!---->
-              <p class="name ftc ft13 mt5">爱肯拿Acana</p>
-              <p class="address ftc c999 ft12">加拿大</p>
-            </a>
-          </li>
-        </ul>
+      <div class="wrapper">
+        <div class="title">
+          <span class="recommend">—— 推荐品牌 ——</span>
+        </div>
+        <div class="list">
+          <ul class="clearfix">
+            <li class="fl rela">
+              <a href="https://wap.epet.com/brand/bd725.html?fw=0" class="block">
+                <div class="img">
+                  <img class="image"
+                       src="https://img2.epetbar.com/nowater/brand_logo/2017-08/09/20/64ac5fd97740cb0fab0cfe3eac1d27f7.jpg">
+                </div>
+                <div class="img2">
+                  <img src="//static.epetbar.com/static_web/wap/src/images/background/jian.png" class="jian">
+                </div>
+                <p class="name">ZIWI Peak</p>
+                <p class="address ftc c999 ft12">新西兰</p>
+              </a>
+            </li>
+            <li class="fl rela">
+              <a href="https://wap.epet.com/brand/bd142.html?fw=0" class="block">
+                <div class="img loadimg-nofixed rela">
+                  <img class="db image"
+                       src="https://img2.epetbar.com/nowater/brand_logo/2013-01/28/87feaa80f9fbed84c37a7b07da6324a1.jpg"
+                       lazy="loaded">
+                </div> <!----> <!---->
+                <p class="name ftc ft13 mt5">渴望</p>
+                <p class="address ftc c999 ft12">加拿大</p>
+              </a>
+            </li>
+            <li class="fl rela">
+              <a href="https://wap.epet.com/brand/bd19.html?fw=0" class="block">
+                <div class="img loadimg-nofixed rela">
+                  <img class="db image"
+                       src="https://img2.epetbar.com/nowater/brand_logo/2016-08/12/14/f439e0dc22df3f6c5bc8919b8d9e5c82.jpg"
+                       lazy="loaded">
+                </div> <!----> <!---->
+                <p class="name ftc ft13 mt5">卡比CANIDAE</p>
+                <p class="address ftc c999 ft12">美国</p>
+              </a>
+            </li>
+            <li class="fl rela">
+              <a href="https://wap.epet.com/brand/bd413.html?fw=0" class="block">
+                <div class="img loadimg-nofixed rela">
+                  <img class="db image"
+                       src="https://img2.epetbar.com/nowater/brand_logo/2016-08/12/14/370a7f6ed7d607b8542aa9e37d202ac5.jpg"
+                       lazy="loaded">
+                </div> <!----> <!---->
+                <p class="name ftc ft13 mt5">爱肯拿Acana</p>
+                <p class="address ftc c999 ft12">加拿大</p>
+              </a>
+            </li>
+          </ul>
+        </div>
       </div>
-    </div>
-    <div class="wrapper">
-      <div class="title">
-        <span class="recommend">—— 推荐品牌 ——</span>
+      <div class="wrapper">
+        <div class="title">
+          <span class="recommend">—— 推荐品牌 ——</span>
+        </div>
+        <div class="list">
+          <ul class="clearfix">
+            <li class="fl rela">
+              <a href="https://wap.epet.com/brand/bd725.html?fw=0" class="block">
+                <div class="img">
+                  <img class="image"
+                       src="https://img2.epetbar.com/nowater/brand_logo/2017-08/09/20/64ac5fd97740cb0fab0cfe3eac1d27f7.jpg">
+                </div>
+                <div class="img2">
+                  <img src="//static.epetbar.com/static_web/wap/src/images/background/jian.png" class="jian">
+                </div>
+                <p class="name">ZIWI Peak</p>
+                <p class="address ftc c999 ft12">新西兰</p>
+              </a>
+            </li>
+            <li class="fl rela">
+              <a href="https://wap.epet.com/brand/bd142.html?fw=0" class="block">
+                <div class="img loadimg-nofixed rela">
+                  <img class="db image"
+                       src="https://img2.epetbar.com/nowater/brand_logo/2013-01/28/87feaa80f9fbed84c37a7b07da6324a1.jpg"
+                       lazy="loaded">
+                </div> <!----> <!---->
+                <p class="name ftc ft13 mt5">渴望</p>
+                <p class="address ftc c999 ft12">加拿大</p>
+              </a>
+            </li>
+            <li class="fl rela">
+              <a href="https://wap.epet.com/brand/bd19.html?fw=0" class="block">
+                <div class="img loadimg-nofixed rela">
+                  <img class="db image"
+                       src="https://img2.epetbar.com/nowater/brand_logo/2016-08/12/14/f439e0dc22df3f6c5bc8919b8d9e5c82.jpg"
+                       lazy="loaded">
+                </div> <!----> <!---->
+                <p class="name ftc ft13 mt5">卡比CANIDAE</p>
+                <p class="address ftc c999 ft12">美国</p>
+              </a>
+            </li>
+            <li class="fl rela">
+              <a href="https://wap.epet.com/brand/bd413.html?fw=0" class="block">
+                <div class="img loadimg-nofixed rela">
+                  <img class="db image"
+                       src="https://img2.epetbar.com/nowater/brand_logo/2016-08/12/14/370a7f6ed7d607b8542aa9e37d202ac5.jpg"
+                       lazy="loaded">
+                </div> <!----> <!---->
+                <p class="name ftc ft13 mt5">爱肯拿Acana</p>
+                <p class="address ftc c999 ft12">加拿大</p>
+              </a>
+            </li>
+          </ul>
+        </div>
       </div>
-      <div class="list">
-        <ul class="clearfix">
-          <li class="fl rela">
-            <a href="https://wap.epet.com/brand/bd725.html?fw=0" class="block">
-              <div class="img">
-                <img class="image"
-                     src="https://img2.epetbar.com/nowater/brand_logo/2017-08/09/20/64ac5fd97740cb0fab0cfe3eac1d27f7.jpg">
-              </div>
-              <div class="img2">
-                <img src="//static.epetbar.com/static_web/wap/src/images/background/jian.png" class="jian">
-              </div>
-              <p class="name">ZIWI Peak</p>
-              <p class="address ftc c999 ft12">新西兰</p>
-            </a>
-          </li>
-          <li class="fl rela">
-            <a href="https://wap.epet.com/brand/bd142.html?fw=0" class="block">
-              <div class="img loadimg-nofixed rela">
-                <img class="db image"
-                     src="https://img2.epetbar.com/nowater/brand_logo/2013-01/28/87feaa80f9fbed84c37a7b07da6324a1.jpg"
-                     lazy="loaded">
-              </div> <!----> <!---->
-              <p class="name ftc ft13 mt5">渴望</p>
-              <p class="address ftc c999 ft12">加拿大</p>
-            </a>
-          </li>
-          <li class="fl rela">
-            <a href="https://wap.epet.com/brand/bd19.html?fw=0" class="block">
-              <div class="img loadimg-nofixed rela">
-                <img class="db image"
-                     src="https://img2.epetbar.com/nowater/brand_logo/2016-08/12/14/f439e0dc22df3f6c5bc8919b8d9e5c82.jpg"
-                     lazy="loaded">
-              </div> <!----> <!---->
-              <p class="name ftc ft13 mt5">卡比CANIDAE</p>
-              <p class="address ftc c999 ft12">美国</p>
-            </a>
-          </li>
-          <li class="fl rela">
-            <a href="https://wap.epet.com/brand/bd413.html?fw=0" class="block">
-              <div class="img loadimg-nofixed rela">
-                <img class="db image"
-                     src="https://img2.epetbar.com/nowater/brand_logo/2016-08/12/14/370a7f6ed7d607b8542aa9e37d202ac5.jpg"
-                     lazy="loaded">
-              </div> <!----> <!---->
-              <p class="name ftc ft13 mt5">爱肯拿Acana</p>
-              <p class="address ftc c999 ft12">加拿大</p>
-            </a>
-          </li>
-        </ul>
+      <div class="wrapper">
+        <div class="title">
+          <span class="recommend">—— 推荐品牌 ——</span>
+        </div>
+        <div class="list">
+          <ul class="clearfix">
+            <li class="fl rela">
+              <a href="https://wap.epet.com/brand/bd725.html?fw=0" class="block">
+                <div class="img">
+                  <img class="image"
+                       src="https://img2.epetbar.com/nowater/brand_logo/2017-08/09/20/64ac5fd97740cb0fab0cfe3eac1d27f7.jpg">
+                </div>
+                <div class="img2">
+                  <img src="//static.epetbar.com/static_web/wap/src/images/background/jian.png" class="jian">
+                </div>
+                <p class="name">ZIWI Peak</p>
+                <p class="address ftc c999 ft12">新西兰</p>
+              </a>
+            </li>
+            <li class="fl rela">
+              <a href="https://wap.epet.com/brand/bd142.html?fw=0" class="block">
+                <div class="img loadimg-nofixed rela">
+                  <img class="db image"
+                       src="https://img2.epetbar.com/nowater/brand_logo/2013-01/28/87feaa80f9fbed84c37a7b07da6324a1.jpg"
+                       lazy="loaded">
+                </div> <!----> <!---->
+                <p class="name ftc ft13 mt5">渴望</p>
+                <p class="address ftc c999 ft12">加拿大</p>
+              </a>
+            </li>
+            <li class="fl rela">
+              <a href="https://wap.epet.com/brand/bd19.html?fw=0" class="block">
+                <div class="img loadimg-nofixed rela">
+                  <img class="db image"
+                       src="https://img2.epetbar.com/nowater/brand_logo/2016-08/12/14/f439e0dc22df3f6c5bc8919b8d9e5c82.jpg"
+                       lazy="loaded">
+                </div> <!----> <!---->
+                <p class="name ftc ft13 mt5">卡比CANIDAE</p>
+                <p class="address ftc c999 ft12">美国</p>
+              </a>
+            </li>
+            <li class="fl rela">
+              <a href="https://wap.epet.com/brand/bd413.html?fw=0" class="block">
+                <div class="img loadimg-nofixed rela">
+                  <img class="db image"
+                       src="https://img2.epetbar.com/nowater/brand_logo/2016-08/12/14/370a7f6ed7d607b8542aa9e37d202ac5.jpg"
+                       lazy="loaded">
+                </div> <!----> <!---->
+                <p class="name ftc ft13 mt5">爱肯拿Acana</p>
+                <p class="address ftc c999 ft12">加拿大</p>
+              </a>
+            </li>
+          </ul>
+        </div>
       </div>
-    </div>
-    <div class="wrapper">
-      <div class="title">
-        <span class="recommend">—— 推荐品牌 ——</span>
+      <div class="wrapper">
+        <div class="title">
+          <span class="recommend">—— 推荐品牌 ——</span>
+        </div>
+        <div class="list">
+          <ul class="clearfix">
+            <li class="fl rela">
+              <a href="https://wap.epet.com/brand/bd725.html?fw=0" class="block">
+                <div class="img">
+                  <img class="image"
+                       src="https://img2.epetbar.com/nowater/brand_logo/2017-08/09/20/64ac5fd97740cb0fab0cfe3eac1d27f7.jpg">
+                </div>
+                <div class="img2">
+                  <img src="//static.epetbar.com/static_web/wap/src/images/background/jian.png" class="jian">
+                </div>
+                <p class="name">ZIWI Peak</p>
+                <p class="address ftc c999 ft12">新西兰</p>
+              </a>
+            </li>
+            <li class="fl rela">
+              <a href="https://wap.epet.com/brand/bd142.html?fw=0" class="block">
+                <div class="img loadimg-nofixed rela">
+                  <img class="db image"
+                       src="https://img2.epetbar.com/nowater/brand_logo/2013-01/28/87feaa80f9fbed84c37a7b07da6324a1.jpg"
+                       lazy="loaded">
+                </div> <!----> <!---->
+                <p class="name ftc ft13 mt5">渴望</p>
+                <p class="address ftc c999 ft12">加拿大</p>
+              </a>
+            </li>
+            <li class="fl rela">
+              <a href="https://wap.epet.com/brand/bd19.html?fw=0" class="block">
+                <div class="img loadimg-nofixed rela">
+                  <img class="db image"
+                       src="https://img2.epetbar.com/nowater/brand_logo/2016-08/12/14/f439e0dc22df3f6c5bc8919b8d9e5c82.jpg"
+                       lazy="loaded">
+                </div> <!----> <!---->
+                <p class="name ftc ft13 mt5">卡比CANIDAE</p>
+                <p class="address ftc c999 ft12">美国</p>
+              </a>
+            </li>
+            <li class="fl rela">
+              <a href="https://wap.epet.com/brand/bd413.html?fw=0" class="block">
+                <div class="img loadimg-nofixed rela">
+                  <img class="db image"
+                       src="https://img2.epetbar.com/nowater/brand_logo/2016-08/12/14/370a7f6ed7d607b8542aa9e37d202ac5.jpg"
+                       lazy="loaded">
+                </div> <!----> <!---->
+                <p class="name ftc ft13 mt5">爱肯拿Acana</p>
+                <p class="address ftc c999 ft12">加拿大</p>
+              </a>
+            </li>
+          </ul>
+        </div>
       </div>
-      <div class="list">
-        <ul class="clearfix">
-          <li class="fl rela">
-            <a href="https://wap.epet.com/brand/bd725.html?fw=0" class="block">
-              <div class="img">
-                <img class="image"
-                     src="https://img2.epetbar.com/nowater/brand_logo/2017-08/09/20/64ac5fd97740cb0fab0cfe3eac1d27f7.jpg">
-              </div>
-              <div class="img2">
-                <img src="//static.epetbar.com/static_web/wap/src/images/background/jian.png" class="jian">
-              </div>
-              <p class="name">ZIWI Peak</p>
-              <p class="address ftc c999 ft12">新西兰</p>
-            </a>
-          </li>
-          <li class="fl rela">
-            <a href="https://wap.epet.com/brand/bd142.html?fw=0" class="block">
-              <div class="img loadimg-nofixed rela">
-                <img class="db image"
-                     src="https://img2.epetbar.com/nowater/brand_logo/2013-01/28/87feaa80f9fbed84c37a7b07da6324a1.jpg"
-                     lazy="loaded">
-              </div> <!----> <!---->
-              <p class="name ftc ft13 mt5">渴望</p>
-              <p class="address ftc c999 ft12">加拿大</p>
-            </a>
-          </li>
-          <li class="fl rela">
-            <a href="https://wap.epet.com/brand/bd19.html?fw=0" class="block">
-              <div class="img loadimg-nofixed rela">
-                <img class="db image"
-                     src="https://img2.epetbar.com/nowater/brand_logo/2016-08/12/14/f439e0dc22df3f6c5bc8919b8d9e5c82.jpg"
-                     lazy="loaded">
-              </div> <!----> <!---->
-              <p class="name ftc ft13 mt5">卡比CANIDAE</p>
-              <p class="address ftc c999 ft12">美国</p>
-            </a>
-          </li>
-          <li class="fl rela">
-            <a href="https://wap.epet.com/brand/bd413.html?fw=0" class="block">
-              <div class="img loadimg-nofixed rela">
-                <img class="db image"
-                     src="https://img2.epetbar.com/nowater/brand_logo/2016-08/12/14/370a7f6ed7d607b8542aa9e37d202ac5.jpg"
-                     lazy="loaded">
-              </div> <!----> <!---->
-              <p class="name ftc ft13 mt5">爱肯拿Acana</p>
-              <p class="address ftc c999 ft12">加拿大</p>
-            </a>
-          </li>
-        </ul>
+      <div class="wrapper">
+        <div class="title">
+          <span class="recommend">—— 推荐品牌 ——</span>
+        </div>
+        <div class="list">
+          <ul class="clearfix">
+            <li class="fl rela">
+              <a href="https://wap.epet.com/brand/bd725.html?fw=0" class="block">
+                <div class="img">
+                  <img class="image"
+                       src="https://img2.epetbar.com/nowater/brand_logo/2017-08/09/20/64ac5fd97740cb0fab0cfe3eac1d27f7.jpg">
+                </div>
+                <div class="img2">
+                  <img src="//static.epetbar.com/static_web/wap/src/images/background/jian.png" class="jian">
+                </div>
+                <p class="name">ZIWI Peak</p>
+                <p class="address ftc c999 ft12">新西兰</p>
+              </a>
+            </li>
+            <li class="fl rela">
+              <a href="https://wap.epet.com/brand/bd142.html?fw=0" class="block">
+                <div class="img loadimg-nofixed rela">
+                  <img class="db image"
+                       src="https://img2.epetbar.com/nowater/brand_logo/2013-01/28/87feaa80f9fbed84c37a7b07da6324a1.jpg"
+                       lazy="loaded">
+                </div> <!----> <!---->
+                <p class="name ftc ft13 mt5">渴望</p>
+                <p class="address ftc c999 ft12">加拿大</p>
+              </a>
+            </li>
+            <li class="fl rela">
+              <a href="https://wap.epet.com/brand/bd19.html?fw=0" class="block">
+                <div class="img loadimg-nofixed rela">
+                  <img class="db image"
+                       src="https://img2.epetbar.com/nowater/brand_logo/2016-08/12/14/f439e0dc22df3f6c5bc8919b8d9e5c82.jpg"
+                       lazy="loaded">
+                </div> <!----> <!---->
+                <p class="name ftc ft13 mt5">卡比CANIDAE</p>
+                <p class="address ftc c999 ft12">美国</p>
+              </a>
+            </li>
+            <li class="fl rela">
+              <a href="https://wap.epet.com/brand/bd413.html?fw=0" class="block">
+                <div class="img loadimg-nofixed rela">
+                  <img class="db image"
+                       src="https://img2.epetbar.com/nowater/brand_logo/2016-08/12/14/370a7f6ed7d607b8542aa9e37d202ac5.jpg"
+                       lazy="loaded">
+                </div> <!----> <!---->
+                <p class="name ftc ft13 mt5">爱肯拿Acana</p>
+                <p class="address ftc c999 ft12">加拿大</p>
+              </a>
+            </li>
+          </ul>
+        </div>
       </div>
-    </div>
-    <div class="wrapper">
-      <div class="title">
-        <span class="recommend">—— 推荐品牌 ——</span>
-      </div>
-      <div class="list">
-        <ul class="clearfix">
-          <li class="fl rela">
-            <a href="https://wap.epet.com/brand/bd725.html?fw=0" class="block">
-              <div class="img">
-                <img class="image"
-                     src="https://img2.epetbar.com/nowater/brand_logo/2017-08/09/20/64ac5fd97740cb0fab0cfe3eac1d27f7.jpg">
-              </div>
-              <div class="img2">
-                <img src="//static.epetbar.com/static_web/wap/src/images/background/jian.png" class="jian">
-              </div>
-              <p class="name">ZIWI Peak</p>
-              <p class="address ftc c999 ft12">新西兰</p>
-            </a>
-          </li>
-          <li class="fl rela">
-            <a href="https://wap.epet.com/brand/bd142.html?fw=0" class="block">
-              <div class="img loadimg-nofixed rela">
-                <img class="db image"
-                     src="https://img2.epetbar.com/nowater/brand_logo/2013-01/28/87feaa80f9fbed84c37a7b07da6324a1.jpg"
-                     lazy="loaded">
-              </div> <!----> <!---->
-              <p class="name ftc ft13 mt5">渴望</p>
-              <p class="address ftc c999 ft12">加拿大</p>
-            </a>
-          </li>
-          <li class="fl rela">
-            <a href="https://wap.epet.com/brand/bd19.html?fw=0" class="block">
-              <div class="img loadimg-nofixed rela">
-                <img class="db image"
-                     src="https://img2.epetbar.com/nowater/brand_logo/2016-08/12/14/f439e0dc22df3f6c5bc8919b8d9e5c82.jpg"
-                     lazy="loaded">
-              </div> <!----> <!---->
-              <p class="name ftc ft13 mt5">卡比CANIDAE</p>
-              <p class="address ftc c999 ft12">美国</p>
-            </a>
-          </li>
-          <li class="fl rela">
-            <a href="https://wap.epet.com/brand/bd413.html?fw=0" class="block">
-              <div class="img loadimg-nofixed rela">
-                <img class="db image"
-                     src="https://img2.epetbar.com/nowater/brand_logo/2016-08/12/14/370a7f6ed7d607b8542aa9e37d202ac5.jpg"
-                     lazy="loaded">
-              </div> <!----> <!---->
-              <p class="name ftc ft13 mt5">爱肯拿Acana</p>
-              <p class="address ftc c999 ft12">加拿大</p>
-            </a>
-          </li>
-        </ul>
-      </div>
-    </div>
-    <div class="wrapper">
-      <div class="title">
-        <span class="recommend">—— 推荐品牌 ——</span>
-      </div>
-      <div class="list">
-        <ul class="clearfix">
-          <li class="fl rela">
-            <a href="https://wap.epet.com/brand/bd725.html?fw=0" class="block">
-              <div class="img">
-                <img class="image"
-                     src="https://img2.epetbar.com/nowater/brand_logo/2017-08/09/20/64ac5fd97740cb0fab0cfe3eac1d27f7.jpg">
-              </div>
-              <div class="img2">
-                <img src="//static.epetbar.com/static_web/wap/src/images/background/jian.png" class="jian">
-              </div>
-              <p class="name">ZIWI Peak</p>
-              <p class="address ftc c999 ft12">新西兰</p>
-            </a>
-          </li>
-          <li class="fl rela">
-            <a href="https://wap.epet.com/brand/bd142.html?fw=0" class="block">
-              <div class="img loadimg-nofixed rela">
-                <img class="db image"
-                     src="https://img2.epetbar.com/nowater/brand_logo/2013-01/28/87feaa80f9fbed84c37a7b07da6324a1.jpg"
-                     lazy="loaded">
-              </div> <!----> <!---->
-              <p class="name ftc ft13 mt5">渴望</p>
-              <p class="address ftc c999 ft12">加拿大</p>
-            </a>
-          </li>
-          <li class="fl rela">
-            <a href="https://wap.epet.com/brand/bd19.html?fw=0" class="block">
-              <div class="img loadimg-nofixed rela">
-                <img class="db image"
-                     src="https://img2.epetbar.com/nowater/brand_logo/2016-08/12/14/f439e0dc22df3f6c5bc8919b8d9e5c82.jpg"
-                     lazy="loaded">
-              </div> <!----> <!---->
-              <p class="name ftc ft13 mt5">卡比CANIDAE</p>
-              <p class="address ftc c999 ft12">美国</p>
-            </a>
-          </li>
-          <li class="fl rela">
-            <a href="https://wap.epet.com/brand/bd413.html?fw=0" class="block">
-              <div class="img loadimg-nofixed rela">
-                <img class="db image"
-                     src="https://img2.epetbar.com/nowater/brand_logo/2016-08/12/14/370a7f6ed7d607b8542aa9e37d202ac5.jpg"
-                     lazy="loaded">
-              </div> <!----> <!---->
-              <p class="name ftc ft13 mt5">爱肯拿Acana</p>
-              <p class="address ftc c999 ft12">加拿大</p>
-            </a>
-          </li>
-        </ul>
-      </div>
-    </div>
-    <div class="wrapper">
-      <div class="title">
-        <span class="recommend">—— 推荐品牌 ——</span>
-      </div>
-      <div class="list">
-        <ul class="clearfix">
-          <li class="fl rela">
-            <a href="https://wap.epet.com/brand/bd725.html?fw=0" class="block">
-              <div class="img">
-                <img class="image"
-                     src="https://img2.epetbar.com/nowater/brand_logo/2017-08/09/20/64ac5fd97740cb0fab0cfe3eac1d27f7.jpg">
-              </div>
-              <div class="img2">
-                <img src="//static.epetbar.com/static_web/wap/src/images/background/jian.png" class="jian">
-              </div>
-              <p class="name">ZIWI Peak</p>
-              <p class="address ftc c999 ft12">新西兰</p>
-            </a>
-          </li>
-          <li class="fl rela">
-            <a href="https://wap.epet.com/brand/bd142.html?fw=0" class="block">
-              <div class="img loadimg-nofixed rela">
-                <img class="db image"
-                     src="https://img2.epetbar.com/nowater/brand_logo/2013-01/28/87feaa80f9fbed84c37a7b07da6324a1.jpg"
-                     lazy="loaded">
-              </div> <!----> <!---->
-              <p class="name ftc ft13 mt5">渴望</p>
-              <p class="address ftc c999 ft12">加拿大</p>
-            </a>
-          </li>
-          <li class="fl rela">
-            <a href="https://wap.epet.com/brand/bd19.html?fw=0" class="block">
-              <div class="img loadimg-nofixed rela">
-                <img class="db image"
-                     src="https://img2.epetbar.com/nowater/brand_logo/2016-08/12/14/f439e0dc22df3f6c5bc8919b8d9e5c82.jpg"
-                     lazy="loaded">
-              </div> <!----> <!---->
-              <p class="name ftc ft13 mt5">卡比CANIDAE</p>
-              <p class="address ftc c999 ft12">美国</p>
-            </a>
-          </li>
-          <li class="fl rela">
-            <a href="https://wap.epet.com/brand/bd413.html?fw=0" class="block">
-              <div class="img loadimg-nofixed rela">
-                <img class="db image"
-                     src="https://img2.epetbar.com/nowater/brand_logo/2016-08/12/14/370a7f6ed7d607b8542aa9e37d202ac5.jpg"
-                     lazy="loaded">
-              </div> <!----> <!---->
-              <p class="name ftc ft13 mt5">爱肯拿Acana</p>
-              <p class="address ftc c999 ft12">加拿大</p>
-            </a>
-          </li>
-        </ul>
-      </div>
-    </div>
-    <div class="wrapper">
-      <div class="title">
-        <span class="recommend">—— 推荐品牌 ——</span>
-      </div>
-      <div class="list">
-        <ul class="clearfix">
-          <li class="fl rela">
-            <a href="https://wap.epet.com/brand/bd725.html?fw=0" class="block">
-              <div class="img">
-                <img class="image"
-                     src="https://img2.epetbar.com/nowater/brand_logo/2017-08/09/20/64ac5fd97740cb0fab0cfe3eac1d27f7.jpg">
-              </div>
-              <div class="img2">
-                <img src="//static.epetbar.com/static_web/wap/src/images/background/jian.png" class="jian">
-              </div>
-              <p class="name">ZIWI Peak</p>
-              <p class="address ftc c999 ft12">新西兰</p>
-            </a>
-          </li>
-          <li class="fl rela">
-            <a href="https://wap.epet.com/brand/bd142.html?fw=0" class="block">
-              <div class="img loadimg-nofixed rela">
-                <img class="db image"
-                     src="https://img2.epetbar.com/nowater/brand_logo/2013-01/28/87feaa80f9fbed84c37a7b07da6324a1.jpg"
-                     lazy="loaded">
-              </div> <!----> <!---->
-              <p class="name ftc ft13 mt5">渴望</p>
-              <p class="address ftc c999 ft12">加拿大</p>
-            </a>
-          </li>
-          <li class="fl rela">
-            <a href="https://wap.epet.com/brand/bd19.html?fw=0" class="block">
-              <div class="img loadimg-nofixed rela">
-                <img class="db image"
-                     src="https://img2.epetbar.com/nowater/brand_logo/2016-08/12/14/f439e0dc22df3f6c5bc8919b8d9e5c82.jpg"
-                     lazy="loaded">
-              </div> <!----> <!---->
-              <p class="name ftc ft13 mt5">卡比CANIDAE</p>
-              <p class="address ftc c999 ft12">美国</p>
-            </a>
-          </li>
-          <li class="fl rela">
-            <a href="https://wap.epet.com/brand/bd413.html?fw=0" class="block">
-              <div class="img loadimg-nofixed rela">
-                <img class="db image"
-                     src="https://img2.epetbar.com/nowater/brand_logo/2016-08/12/14/370a7f6ed7d607b8542aa9e37d202ac5.jpg"
-                     lazy="loaded">
-              </div> <!----> <!---->
-              <p class="name ftc ft13 mt5">爱肯拿Acana</p>
-              <p class="address ftc c999 ft12">加拿大</p>
-            </a>
-          </li>
-        </ul>
+      <div class="wrapper">
+        <div class="title">
+          <span class="recommend">—— 推荐品牌 ——</span>
+        </div>
+        <div class="list">
+          <ul class="clearfix">
+            <li class="fl rela">
+              <a href="https://wap.epet.com/brand/bd725.html?fw=0" class="block">
+                <div class="img">
+                  <img class="image"
+                       src="https://img2.epetbar.com/nowater/brand_logo/2017-08/09/20/64ac5fd97740cb0fab0cfe3eac1d27f7.jpg">
+                </div>
+                <div class="img2">
+                  <img src="//static.epetbar.com/static_web/wap/src/images/background/jian.png" class="jian">
+                </div>
+                <p class="name">ZIWI Peak</p>
+                <p class="address ftc c999 ft12">新西兰</p>
+              </a>
+            </li>
+            <li class="fl rela">
+              <a href="https://wap.epet.com/brand/bd142.html?fw=0" class="block">
+                <div class="img loadimg-nofixed rela">
+                  <img class="db image"
+                       src="https://img2.epetbar.com/nowater/brand_logo/2013-01/28/87feaa80f9fbed84c37a7b07da6324a1.jpg"
+                       lazy="loaded">
+                </div> <!----> <!---->
+                <p class="name ftc ft13 mt5">渴望</p>
+                <p class="address ftc c999 ft12">加拿大</p>
+              </a>
+            </li>
+            <li class="fl rela">
+              <a href="https://wap.epet.com/brand/bd19.html?fw=0" class="block">
+                <div class="img loadimg-nofixed rela">
+                  <img class="db image"
+                       src="https://img2.epetbar.com/nowater/brand_logo/2016-08/12/14/f439e0dc22df3f6c5bc8919b8d9e5c82.jpg"
+                       lazy="loaded">
+                </div> <!----> <!---->
+                <p class="name ftc ft13 mt5">卡比CANIDAE</p>
+                <p class="address ftc c999 ft12">美国</p>
+              </a>
+            </li>
+            <li class="fl rela">
+              <a href="https://wap.epet.com/brand/bd413.html?fw=0" class="block">
+                <div class="img loadimg-nofixed rela">
+                  <img class="db image"
+                       src="https://img2.epetbar.com/nowater/brand_logo/2016-08/12/14/370a7f6ed7d607b8542aa9e37d202ac5.jpg"
+                       lazy="loaded">
+                </div> <!----> <!---->
+                <p class="name ftc ft13 mt5">爱肯拿Acana</p>
+                <p class="address ftc c999 ft12">加拿大</p>
+              </a>
+            </li>
+          </ul>
+        </div>
       </div>
     </div>
   </div>
 </template>
 
 <script>
+  import BScroll from 'better-scroll'
   export default {
+    mounted(){
+      const brandContainerHeight=document.documentElement.clientHeight
+      console.log(brandContainerHeight)
+      const brandContainer =document.getElementById('brandContainer')
+      brandContainer.style.height=brandContainerHeight +'px'
+
+      setTimeout(()=>{
+        new BScroll(this.$refs.brandContainer,{
+          click:true
+        })
+      },1000)
+    },
     data () {
       return {}
     },
@@ -398,6 +413,8 @@
 </script>
 
 <style lang="stylus" rel="stylesheet/stylus">
+  .brandContainer
+    width 100%
   .brand_list
     width 100%
     padding 45px 0 0

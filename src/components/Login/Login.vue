@@ -1,5 +1,5 @@
 <template>
-  <div style="background: #f3f4f5">
+  <div style="background: white">
     <div class="login_bg">
       <div class="head_top">
         <router-link class="goback" to="/home"></router-link>
@@ -90,6 +90,9 @@
   export default {
     data () {
       return {}
+    },
+    created () {
+      document.body.style.background="#f3f4f5"
     },
     methods: {}
   }

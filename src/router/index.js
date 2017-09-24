@@ -12,6 +12,8 @@ import login from '../components/Login/Login.vue'
 import showHome from '../components/ShowHome/ShowHome.vue'
 import sortab1 from '../components/sortab1/sortab1.vue'
 import sortab2 from '../components/sortab2/sortab2.vue'
+
+import recommend from '../components/recmmend/recmmend.vue'
 Vue.use(Router)
 
 export default new Router({
@@ -36,7 +38,17 @@ export default new Router({
           children:[
             {
               path:'/tab1',
-              component:sortab1
+              component:sortab1,
+              children:[
+                {
+                  path:'/recommend',
+                  component  : recommend
+                },
+                {
+                  path:'/',
+                  redirect:'/recommend'
+                }
+              ],
             },
             {
               path:'/tab2',

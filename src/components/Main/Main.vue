@@ -1,9 +1,9 @@
 <template>
-  <div class="main" ref="mainScroll">
+  <div class="main" ref="mainScroll" id="mainContainer">
     <div class="mainScroll" >
       <div class="hideHeader">
         <div class="head_top">
-          <a href="javascript:void(0)" class="go-back"></a>
+          <router-link to="/home" class="go-back"></router-link>
           <span class="head_top_title">狗主粮</span>
           <span class="pull_right"></span>
         </div>
@@ -388,9 +388,17 @@
       split,
     },
     mounted (){
-      this.$nextTick(()=>{
-        new BScroll(this.$refs.mainScroll,{click:true})
-      })
+      const mainHeight=document.documentElement.clientHeight
+
+      const mainContainer =document.getElementById('mainContainer')
+      mainContainer.style.height=mainHeight +'px'
+
+      setTimeout(()=>{
+        new BScroll(this.$refs.mainScroll,{
+          click:true
+        })
+      },1000)
+
     },
     data () {
       return {}
@@ -402,12 +410,9 @@
 <style lang="stylus" rel="stylesheet/stylus">
   @import "../../common/stylus/mixins.styl"
   .main
-
     width 100%
     height 100%
     .mainScroll
-      width 100%
-      height 100%
       .hideHeader
         width 100%
         .head_top

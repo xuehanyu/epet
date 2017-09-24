@@ -3,12 +3,12 @@
     <div class="charity_img">
       <div class="charity_bg">
         <a href="javascript:;">
-          <img src="./TaCharity.jpg" alt="">
+          <img src="./TaCharity.jpg">
         </a>
       </div>
       <div class="charity_know">
         <a href="javascript:;">
-          <img src="./knowcharity.png" alt="">
+          <img src="./knowcharity.png">
         </a>
       </div>
     </div>
@@ -92,8 +92,9 @@
     mounted(){
       const ul =this.$refs.brandRight.children[0]
       const liWidth=100
+      const marginSize=10
       const size=ul.children.length
-      ul.style.width = liWidth*size +'px'
+      ul.style.width = (liWidth+marginSize)*size - 10 +'px'
 
       this.$nextTick(()=>{
 
@@ -169,17 +170,20 @@
   .charityBrand
     background-color white
     width 100%
-    padding-left 10px
     overflow hidden
     .brandLeft
-      width: 60px;
-      padding-top: 10px
+      box-sizing content-box
+      width: 50px;
+      padding-left  10px
+      /*padding-top: 10px*/
+      padding-right 10px
       float: left
       background-color white
       z-index 10
+      height 76px
       position relative
       img
-        width 90%
+        width 100%
         display block
         margin-top 10px
         vertical-align middle

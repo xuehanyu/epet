@@ -11,6 +11,9 @@
           <span>品牌</span>
         </router-link>
       </div>
+      <a href="https://wap.epet.com/search.html?pet_type=dog&amp;fw=0">
+        <img class=" search" src="//static.epetbar.com/static_web/wap/src/images/background/search-ico.png" >
+      </a>
     </header>
     <router-view></router-view>
   </div>
@@ -57,4 +60,10 @@
       & > a >span
         color #333
         border-bottom none
+    .search
+      position absolute
+      top 13px
+      right 15px
+      width 14px
+      height 14px
 </style>
