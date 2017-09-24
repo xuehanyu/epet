@@ -1,6 +1,6 @@
 <template>
-  <div class="uses">
-    日用外出组件
+  <div>
+    购物车组件
   </div>
 </template>
 

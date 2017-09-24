@@ -37,6 +37,7 @@
 </script>
 <style lang="stylus" rel="stylesheet/stylus">
   .swipe_wrape
+    position relative
     width 100%
     height 160px
     & img

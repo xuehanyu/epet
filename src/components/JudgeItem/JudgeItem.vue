@@ -134,7 +134,7 @@
               width 100%
             .join_time
               position absolute
-              bottom 20px
+              bottom 5px
               left 0
               text-align center
               width 100%

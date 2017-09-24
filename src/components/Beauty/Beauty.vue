@@ -14,7 +14,5 @@
 </script>
 
 <style lang="stylus" rel="stylesheet/stylus">
-  .beauty
-    position absolute
-    top 142px
+
 </style>

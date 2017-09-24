@@ -21,7 +21,7 @@
     <div class="surpriseBottom" ref="surpriseList">
       <ul class="list">
         <li class="item">
-          <a href="">
+          <a href="javascript:">
             <div class="surprise_img">
               <img src="./surprise1.jpg">
             </div>

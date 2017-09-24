@@ -14,7 +14,6 @@
 </script>
 
 <style lang="stylus" rel="stylesheet/stylus">
-  .health
-    position absolute
-    top 142px
+
+
 </style>

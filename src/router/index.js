@@ -6,13 +6,50 @@ import health from '../components/Health/Health.vue'
 import food from '../components/Food/Food.vue'
 import uses from '../components/Uses/Uses.vue'
 import beauty from '../components/Beauty/Beauty.vue'
+import sort from '../components/sort/sort.vue'
+import shop from '../components/shop/shop.vue'
+import login from '../components/Login/Login.vue'
+import showHome from '../components/ShowHome/ShowHome.vue'
+import sortab1 from '../components/sortab1/sortab1.vue'
+import sortab2 from '../components/sortab2/sortab2.vue'
 Vue.use(Router)
 
 export default new Router({
   routes: [
     {
       path: '/home',
-      component: home
+      component: home,
+      children: [
+        {
+          path: '/showHome',
+          component: showHome
+        },
+
+        {
+          path: '/',
+          redirect:'/showHome'
+        },
+
+        {
+          path:'/sort',
+          component:sort,
+          children:[
+            {
+              path:'/tab1',
+              component:sortab1
+            },
+            {
+              path:'/tab2',
+              component:sortab2
+            },
+            {
+              path:'/',
+              redirect:'/tab1'
+            },
+          ]
+
+        }
+      ]
     },
     {
       path: '/main',
@@ -37,6 +74,14 @@ export default new Router({
     {
       path: '/',
       redirect :'/home'
-    }
+    },
+    {
+      path:'/shop',
+      component:shop
+    },
+    {
+      path:'/login',
+      component:login
+    },
   ]
 })
