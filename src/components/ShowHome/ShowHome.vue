@@ -1,6 +1,6 @@
 <template>
   <div class="homeContainer">
-    <epet_header  class="epet_header"></epet_header>
+    <epet_header class="epet_header"></epet_header>
     <div class="tab_container" ref="tabs">
       <ul class="tab" id="tab">
         <li class="tab-item">
@@ -57,6 +57,7 @@
         <split></split>
         <JudgeItem></JudgeItem>
         <epet_footer></epet_footer>
+       <!-- <div style="height: 40px"></div>-->
       </div>
   </div>
     <godog></godog>
@@ -98,7 +99,7 @@
       })
       setTimeout(()=>{
         new BScroll(this.$refs.homePage,{click:true})
-      },1000)
+      },300)
     },
     methods: {},
     components:{
@@ -123,7 +124,6 @@
   .homeContainer
     height 100%
     width 100%
-    padding-bottom 55px
     .epet_header
       position fixed
       top 0
@@ -138,9 +138,10 @@
       top 108px
       width 100%
       .tab
-        display flex
         white-space nowrap
+        overflow hidden
         .tab-item
+          float left
           width 75px
           height 36px
           line-height 36px
@@ -151,29 +152,31 @@
     .homePage
       height 667px
       width 100%
-    .other_container
-      padding-top 144px
-      .gif
-        width 100%
-        height 120px
-        & > a > img
+      position relative
+      .other_container
+        padding-top 144px
+        padding-bottom 55px
+        .gif
           width 100%
-      .tiyan
-        width 100%
-        height 100%
-        & > a > img
+          height 120px
+          & > a > img
+            width 100%
+        .tiyan
           width 100%
-      .special
-        width 100%
-        position relative
-        padding-top 10px
-        text-align center
-        border-bottom 1px solid #f3f4f5
-        & > img
-          width 50%
-          display block
-          max-width: 50%;
-          max-height: 73px;
-          margin: 0 auto;
-          vertical-align middle
+          height 100%
+          & > a > img
+            width 100%
+        .special
+          width 100%
+          position relative
+          padding-top 10px
+          text-align center
+          border-bottom 1px solid #f3f4f5
+          & > img
+            width 50%
+            display block
+            max-width: 50%;
+            max-height: 73px;
+            margin: 0 auto;
+            vertical-align middle
 </style>

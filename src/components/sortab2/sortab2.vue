@@ -1,6 +1,7 @@
 <template>
   <div class="brandContainer" id="brandContainer" ref="brandContainer">
     <div class="brand_list">
+      <div style="height: 40px"></div>
       <div class="wrapper">
         <div class="title">
           <span class="recommend">—— 推荐品牌 ——</span>
@@ -416,6 +417,7 @@
   .brandContainer
     width 100%
   .brand_list
+    margin-top -45px
     width 100%
     padding 45px 0 0
     .wrapper

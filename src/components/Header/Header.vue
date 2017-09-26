@@ -1,8 +1,8 @@
 <template>
   <div class="epet_header">
-    <div class="download">
+    <div class="download" v-show="isDownload">
       <div class="overflow ">
-        <span class="closebtn">
+        <span class="closebtn" @click="closeDownload">
           <img id="close_down_bar" src="//static.epetbar.com/static_wap/lib/common_images/closebtn_03.png">
         </span>
         <div class="appdowimg">
@@ -13,14 +13,16 @@
       </div>
     </div>
     <div class="epet-search ">
-      <div class="location">
-        <a href="https://wap.epet.com/place.html?pet_type=dog&amp;fw=0">
-          <span class="dogStation c89">狗狗站</span>
-          <span class="c89">|</span>
-          <span data-name="my-place" class="myposition">重庆</span>
-          <i class="icon_down"></i>
-        </a>
-      </div>
+      <router-link to="/location">
+        <div class="location">
+          <a href="javascript:;">
+            <span class="dogStation c89">狗狗站</span>
+            <span class="c89">|</span>
+            <span data-name="my-place" class="myposition">北京</span>
+            <i class="icon_down"></i>
+          </a>
+        </div>
+      </router-link>
       <p class="search-text">
         <a href="https://wap.epet.com/search.html?pet_type=dog&amp;fw=0">
           <input type="search" placeholder="搜索商品和品牌" disabled="disabled">
@@ -37,9 +39,17 @@
 <script>
   export default {
     data () {
-      return {}
+      return {
+        isDownload:true
+      }
     },
-    methods: {}
+
+
+    methods: {
+      closeDownload(){
+        this.isDownload=false
+      }
+    }
   }
 </script>
 
@@ -118,5 +128,4 @@
           width 25px
           margin-left 10px
           vertical-align middle
-
 </style>

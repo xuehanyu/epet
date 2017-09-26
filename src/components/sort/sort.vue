@@ -15,16 +15,29 @@
         <img class=" search" src="//static.epetbar.com/static_web/wap/src/images/background/search-ico.png" >
       </a>
     </header>
-    <router-view></router-view>
+    <router-view :classes="classes"></router-view>
   </div>
 </template>
 
 <script>
+  import axios from 'axios'
   export default {
     data () {
-      return {}
+      return {
+        classes:[]
+      }
     },
-    methods: {}
+    methods: {},
+    mounted(){
+      axios.get('/api/classes')
+        .then(response =>{
+          const result=response.data
+          if(result.code===0){
+            this.classes=result.data
+          }
+        })
+
+    }
   }
 </script>
 

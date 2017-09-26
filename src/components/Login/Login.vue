@@ -4,7 +4,7 @@
       <div class="head_top">
         <router-link class="goback" to="/home"></router-link>
         <div class="regist">
-          <a href="">注册</a>
+          <router-link to="/register">注册</router-link>
         </div>
       </div>
       <div class="e_logo">
@@ -12,18 +12,18 @@
       </div>
       <ul class="selectTag">
         <li>
-          <a href="javascript:;">普通登录</a>
-          <i class="showi" ></i>
+          <a href="javascript:;" @click="change(true)">普通登录</a>
+          <i :class="{showi:isShow}" ></i>
         </li>
         <li>
-          <a href="javascript:;">手机动态密码登录</a>
-          <i></i>
+          <a href="javascript:;" @click="change(false)">手机动态密码登录</a>
+          <i :class="{showi:!isShow}" ></i>
         </li>
       </ul>
     </div>
     <div class="content">
       <div class="myformBox">
-        <form method="post" id="login_form" action="">
+        <form method="post" id="login_form" action="" v-show="isShow">
           <ul class="mform">
             <li>
               <span class="mNameIco"></span>
@@ -35,8 +35,8 @@
             </li>
           </ul>
         </form>
-        <form id="newlogin_form" method="post" action="">
-          <ul class="mform" style="display: none">
+        <form id="newlogin_form" method="post" action="" v-show="!isShow">
+          <ul class="mform">
             <li>
               <span class="mNumIco"></span>
               <input type="text" placeholder="已注册的手机号" class="dttext" name="phone" id="bdphone">
@@ -89,12 +89,20 @@
 <script>
   export default {
     data () {
-      return {}
+      return {
+        isShow:true
+      }
+    },
+
+    methods: {
+      change(isShow){
+        this.isShow=isShow
+      }
     },
     created () {
       document.body.style.background="#f3f4f5"
     },
-    methods: {}
+
   }
 </script>
 

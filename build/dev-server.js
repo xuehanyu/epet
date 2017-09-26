@@ -23,6 +23,50 @@ var proxyTable = config.dev.proxyTable
 var app = express()
 var compiler = webpack(webpackConfig)
 
+// 引入数据
+var chinaData=require('../src/mock/china_area.json')
+
+var epetData=require('../src/mock/epet.json')
+
+// 配置路由器
+var chinaRouter=express.Router()
+// //注册路由，模拟mock接口
+chinaRouter.get('/province',function (req,res) {
+  const provinces=chinaData.provinces
+  res.send(provinces)
+})
+chinaRouter.get('/cities',function (req,res) {
+  const provinceId=req.query.provinceId
+  const cityArr=chinaData.cities;
+  const cities=[] ;
+  cityArr.forEach ((city)=>{
+    if(city.parent===provinceId || city.id===provinceId){
+      cities.push(city)
+    }
+  })
+  res.send(cities)
+})
+chinaRouter.get('/counties',function (req,res) {
+  const cityId = req.query.cityId
+  const countyArr=chinaData.counties
+  const counties=[]
+  countyArr.forEach( (county)=>{
+    if(county.parent===cityId){
+     counties.push(county)
+    }
+  })
+  res.send(counties)
+})
+
+chinaRouter.get('/classes',function (req,res) {
+  res.send({
+    code:0,
+    data:epetData.classes
+  })
+})
+
+app.use('/api', chinaRouter)
+
 var devMiddleware = require('webpack-dev-middleware')(compiler, {
   publicPath: webpackConfig.output.publicPath,
   quiet: true

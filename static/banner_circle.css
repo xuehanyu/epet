@@ -1,0 +1,11 @@
+.mint-swipe-indicator{
+  opacity: 0.9;
+  background-color: #ffffff;
+  width: 6px;
+  height: 6px;
+  margin: 0 5px;
+}
+.is-active{
+  width: 16px;
+  border-radius: 30px;
+}

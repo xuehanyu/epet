@@ -12,7 +12,8 @@ import login from '../components/Login/Login.vue'
 import showHome from '../components/ShowHome/ShowHome.vue'
 import sortab1 from '../components/sortab1/sortab1.vue'
 import sortab2 from '../components/sortab2/sortab2.vue'
-
+import location from '../components/location/location.vue'
+import register from '../components/register/register.vue'
 import recommend from '../components/recmmend/recmmend.vue'
 Vue.use(Router)
 
@@ -39,7 +40,7 @@ export default new Router({
             {
               path:'/tab1',
               component:sortab1,
-              children:[
+              /*children:[
                 {
                   path:'/recommend',
                   component  : recommend
@@ -48,7 +49,7 @@ export default new Router({
                   path:'/',
                   redirect:'/recommend'
                 }
-              ],
+              ],*/
             },
             {
               path:'/tab2',
@@ -88,12 +89,21 @@ export default new Router({
       redirect :'/home'
     },
     {
+      path:'/register',
+      component:register
+    },
+    {
       path:'/shop',
       component:shop
     },
     {
       path:'/login',
       component:login
+
     },
+    {
+      path:'/location',
+      component:location
+    }
   ]
 })

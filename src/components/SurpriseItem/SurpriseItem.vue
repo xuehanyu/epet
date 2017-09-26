@@ -6,11 +6,11 @@
       </div>
       <div class="over">距本场结束</div>
       <div class="timing">
-        <span class="time1">07</span>
+        <span class="time1">{{h}}</span>
         <span class="time2">:</span>
-        <span class="time1">02</span>
+        <span class="time1">{{m}}</span>
         <span class="time2">:</span>
-        <span class="time1">35</span>
+        <span class="time1">{{s}}</span>
       </div>
       <div class="more">
         <a href="javascript:;">
@@ -113,25 +113,42 @@
   import BScroll from 'better-scroll'
   export default {
     data () {
-      return {}
+      return {
+        h: ' ',
+        m: ' ',
+        s: ' '
+      }
     },
     mounted (){
-      const ul=this.$refs.surpriseList.children[0]
-      const li=99;
-      const marginCont=23
-      const liSize=ul.children.length
+      const ul = this.$refs.surpriseList.children[0]
+      const li = 99;
+      const marginCont = 23
+      const liSize = ul.children.length
       console.log(liSize)
-      ul.style.width=(li+marginCont)*liSize -marginCont +'px'
-
-      this.$nextTick(()=>{
-
-        new BScroll(this.$refs.surpriseList,{
-          click:true,
-          scrollX:true
+      ul.style.width = (li + marginCont) * liSize - marginCont + 'px'
+      this.$nextTick(() => {
+        new BScroll(this.$refs.surpriseList, {
+          click: true,
+          scrollX: true
         })
       })
+      setInterval(()=>{  // 必须使用箭头函数，否则 this指向window
+        const EndTime = new Date('2019/09/26 10:00:00'); //截止时间
+        const NowTime = new Date();   // 获取当前时间
+        const t = EndTime.getTime() - NowTime.getTime()   // 计算时间差
+        /*this.d= Math.floor(t/1000/60/60/24);*/
+        this.h=this.fix(Math.floor(t/1000/60/60%24),2)
+        this.m= this.fix(Math.floor(t/1000/60%60),2)
+        this.s= this.fix(Math.floor(t/1000%60),2)
+      },1000)
+
     },
-    methods: {}
+    methods: {
+      fix(num, length) {
+        return ('' + num).length < length ? ((new Array(length + 1)).join('0') + num).slice(-length) : '' + num;
+      }
+    },
+    computed:{}
   }
 </script>
 
