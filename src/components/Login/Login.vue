@@ -23,7 +23,7 @@
     </div>
     <div class="content">
       <div class="myformBox">
-        <form method="post" id="login_form" action="" v-show="isShow">
+        <form method="get" id="login_form" action="" v-show="isShow">
           <ul class="mform">
             <li>
               <span class="mNameIco"></span>
@@ -52,7 +52,7 @@
               <span class="mpasswordIco"></span>
               <input type="text" class="dttext" placeholder="动态密码" name="code" id="code">
               <!--<a class="get_phonepass " >(<d id="stime">60</d>)短信已发送</a>-->
-              <a href="javascript:void(0);" class="get_phonepass  " id="scodebtn">获取动态密码</a>
+              <a href="javascript:void(0);" class="get_phonepass" @click="getCode" id="scodebtn">获取动态密码</a>
             </li>
           </ul>
         </form>
@@ -60,7 +60,10 @@
       <div class="forgetPass">
         <a href="javascript:;">忘记密码？</a>
       </div>
-      <div class="login_btn">
+      <div class="login_btn" @click="login" v-show="isShow">
+        <a href="javascript:;">登 录</a>
+      </div>
+      <div class="login_btn" @click="isLogin" v-show="!isShow">
         <a href="javascript:;">登 录</a>
       </div>
       <div class="App">APP专享:E宠团5折包邮,首单满99送99
@@ -85,18 +88,68 @@
     </div>
   </div>
 </template>
-
 <script>
+  import axios from 'axios'
+  import {Toast} from 'mint-ui'
   export default {
     data () {
       return {
         isShow:true
       }
     },
+    mounted(){
 
+    },
     methods: {
       change(isShow){
         this.isShow=isShow
+      },
+      login(){
+        // 获取当前用户输入的用户名，可能是tel，也可能是昵称
+        const username=document.getElementById('username').value.trim()
+        const password=document.getElementById('password').value.trim()
+        axios.get(`/api/login?username=${username}&&password=${password}`)
+          .then(response =>{
+            const user=response.data
+            Toast({
+              message: user.msg,
+              position: 'top',
+              duration: 3000
+            })
+          })
+      },
+      isLogin(){
+        const tel=document.getElementById('bdphone').value.trim()
+        const code =document.getElementById('code').value.trim()
+        axios.get(`/api/islogin?tel=${tel}&&code=${code}`)
+          .then(response =>{
+            const user=response.data
+            Toast({
+              message: user.msg,
+              position: 'top',
+              duration: 2000
+            })
+            if (user.msg==="恭喜您，登录成功~~~~"){
+              setTimeout(()=>{
+                location.href="#/home"
+              },2000)
+            }
+          })
+      },
+      getCode(){
+        const tel=document.getElementById('bdphone').value.trim()
+        if(tel){
+          axios.get('/api/getcode')
+            .then(response =>{
+              const result =response.data
+            })
+        }else {
+          Toast({
+            message: "请先输入手机号",
+            position: 'top',
+            duration: 3000
+          })
+        }
       }
     },
     created () {

@@ -39,6 +39,7 @@
   import axios from 'axios'
   import Vue from 'vue'
   import VueScroller from 'vue-scroller'
+  import PubSub from 'pubsub-js'
   Vue.use(VueScroller)
   export default {
     data () {
