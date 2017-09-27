@@ -18,7 +18,7 @@
           <a href="javascript:;">
             <span class="dogStation c89">狗狗站</span>
             <span class="c89">|</span>
-            <span data-name="my-place" class="myposition">北京</span>
+            <span data-name="my-place" class="myposition">{{delocation}}</span>
             <i class="icon_down"></i>
           </a>
         </div>
@@ -41,11 +41,17 @@
   export default {
     data () {
       return {
-        isDownload:true
+        isDownload:true,
+        delocation:"北京1"
       }
     },
-
-
+    mounted(){
+      this.delocation = localStorage.getItem('del')
+      PubSub.subscribe("provinceMsg",(msg,data)=>{
+        this.delocation=data
+        localStorage.setItem('del',this.delocation)
+      })
+    },
     methods: {
       closeDownload(){
         this.isDownload=false

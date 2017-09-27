@@ -159,6 +159,7 @@ chinaRouter.get('/register',function (req,res) {
   var  password=req.query.password
   var  passwordag=req.query.passwordag
   var  usercode=req.query.code
+  console.log(usercode)
   var  tel=req.query.tel
   users.forEach((user)=>{
     if(user.tel===tel){
@@ -169,7 +170,7 @@ chinaRouter.get('/register',function (req,res) {
   })
   const regName=/^(\w){4,20}$/
   const regPassword=/^(\w){6,20}$/
-  if(code!==usercode){
+  if(usercode!==code){
     res.send({errMsg:'验证码输入错误'})
   }else if(!regName.test(username)){
     res.send({errMsg:'用户名太短,只能是4-20位中英文、数字、下划线或组合哦'})

@@ -1,5 +1,5 @@
 <template>
-<div>
+<div >
   <div v-show="isShow">
     <div class="putPhone">
       <span class="phoneIcon"></span>
@@ -97,7 +97,7 @@
         // 获取用户输入的确认密码
         const passwordag=document.getElementById('passwordag').value.trim()
         //获取用户输入的验证码，
-        const usercode=document.getElementById('code').value.trim()
+        const code=document.getElementById('code').value.trim()
         // 创建一个正则表达式，用于验证用户名是否为4-20位的字母或数字或下划线的组合
         const tel=this.tel
         axios.get(`/api/register?password=${password}&&passwordag=${passwordag}&&username=${username}&&tel=${tel}&&code=${code}`)

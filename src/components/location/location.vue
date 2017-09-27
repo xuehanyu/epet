@@ -18,7 +18,7 @@
           <span class="water_station">水族站</span>
         </a>
       </div>
-      <div class="default_address">
+      <div class="default_address" id="defaultAddress">
         <span>
           当前默认地址:
           <span v-model="province">{{province}}</span>
@@ -51,7 +51,7 @@
         showC:false,
         showCountry:false,
         province:" ",
-        city:" ",
+        city:"",
         county:" "
       }
     },
@@ -61,6 +61,9 @@
         .then(response =>{
           this.provinces=response.data
         })
+
+      const defaultAddress=document.getElementById('defaultAddress')
+      console.log(defaultAddress)
     },
     methods: {
       //  当点击对应省时，发送请求，获取相对应的市级信息
@@ -91,6 +94,7 @@
           return item.id ===value
         })
         this.city =cityLi.city  //获取市的名字
+        PubSub.publish("provinceMsg",this.province)
         this.showP=false
         this.showC=false
         this.showCountry=true
@@ -103,7 +107,9 @@
           return item.id===value
         })
        this.county=CountryLi.county
-      }
+
+        history.back()
+      },
     }
   }
 </script>

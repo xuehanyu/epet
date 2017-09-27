@@ -1,5 +1,5 @@
 <template>
-  <div style="background: white">
+  <div >
     <div class="login_bg">
       <div class="head_top">
         <router-link class="goback" to="/home"></router-link>
@@ -116,6 +116,9 @@
               position: 'top',
               duration: 3000
             })
+            setTimeout(()=>{
+              location.href="#/home"
+            },1500)
           })
       },
       isLogin(){
@@ -153,7 +156,7 @@
       }
     },
     created () {
-      document.body.style.background="#f3f4f5"
+      /*document.body.style.background="#f3f4f5"*/
     },
 
   }
